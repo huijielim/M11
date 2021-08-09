@@ -1,0 +1,19 @@
+<script>
+
+function outer(){
+    var counter = 1;
+
+    function inner(){
+        console.log(counter);
+        counter++;
+    }
+    return inner; // inner function remembers the values of variables in scope 
+}
+
+var inner = outer();
+inner();
+inner();
+inner();
+// 1,2,3
+
+</script>

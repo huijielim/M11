@@ -1,0 +1,12 @@
+<script>
+
+let numbers = [0,1,2,3,4,5];
+//[a] let mycopy = numbers;
+let mycopy = [...numbers]; // new copy and not a reference
+mycopy[2] = 9;
+console.log(mycopy);
+console.log(numbers); // [a] will show 9 as a replacement // will show original numbers
+
+
+
+</script>

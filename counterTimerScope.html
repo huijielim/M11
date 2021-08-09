@@ -1,0 +1,27 @@
+<script>
+
+//loop with timer
+for (var i=1; i<10; i++){
+    setTimeout(function(){
+        console.log('first:' + i);
+    },1000); // 10
+}
+
+//closure
+for (var i=1; i<10; i++){
+    (function(x){
+        setTimeout(function(){
+        console.log('second:' + x);
+        },1000);
+    })(i); // 1,2,3,4,5,6,7,8,9 // creating a closure that brings in the value of i in each of the loops, so value of timer sees is the value of each of those loops    
+}
+
+//block scope
+for (let i=1; i<10; i++){
+    setTimeout(function(){
+        console.log('third:' + i);
+    },1000); // 1,2,3,4,5,6,7,8,9 // let has block scope that creates a new memory space for each loop and the value of i is different for each timer and the difference is the value of the timer in each iliteration, much simplier syntac and do not need to write closure  
+}
+
+
+</script>

@@ -1,0 +1,29 @@
+<script>
+
+function greetings(){
+    return 'hello';
+}
+console.log(greetings());
+
+//arrow
+var greetings = () => 'hello';
+console.log(greetings());
+
+//with parameters
+var add = (a,b) => a+b;
+console.log(add(1,1));
+
+//number labels
+var numbers = ['one', 'two', 'three'];
+
+//classic callback 
+var output = numbers.map(function(label){
+    return label.length;
+});
+console.log(output) // 3,3,5
+
+//arrow function
+var output = numbers.map(label => label.length);
+console.log(output) // 3,3,5
+
+</script>

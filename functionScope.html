@@ -1,0 +1,19 @@
+<script>
+
+var age = 20;
+console.log(age);
+
+age = 30;
+console.log(age);
+
+var age = 40;
+console.log(age);
+
+//function scope 
+function userInfo(){
+    var age = 20; // if var is removed, the variable will be accessable 
+    return age;
+}
+console.log(userInfo());
+// console.log(age); 20, 20
+</script>

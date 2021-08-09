@@ -1,0 +1,13 @@
+<script>
+
+{
+    console.log(i);
+    var i = 0; // result is 'undefined' however var do exist, the i scope is global > var do not have block scope and var storage space is initiated on load
+}
+
+{
+    console.log(j);
+    let j = 0; // error occurs as j does not exist as it is within block scope, j remains uninitialized  
+}
+
+</script>

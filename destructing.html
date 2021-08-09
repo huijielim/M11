@@ -1,0 +1,12 @@
+<script>
+let a, b, rest;
+[a, b ...rest] = [10, 20, 30, 40, 50];
+console.log(a);
+console.log(b);
+console.log(rest);
+
+({a, b, ...rest} = {a:10, b:20, c:30, d:40});
+
+//Destructuring unpacks values from arrays and objects and puts them into variables 
+
+</script>
